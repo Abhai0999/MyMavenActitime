@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+<listener class-name="com.actitime.generic.MyTestListner"/>
+</listeners>
+  <test thread-count="5" name="Test">
+  <parameter name="Browser" value="chrome"/>
+  <parameter name="BaseURL" value= "http:127.0.0.1/login.do"/>
+    <classes>
+      <class name="com.actitime.scripts.UserTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
